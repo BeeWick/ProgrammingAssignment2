@@ -1,11 +1,17 @@
 ## Cache Inverse of A Matrix
 
 ## Takes an invertable matrix as an argument
+## and returns a list of functions to get and cache the matrix
+
 
 
 makeCacheMatrix <- function(x = matrix()) {
 
+  MatInv <- NULL
+  
   set <- function(y) {
+    x <<-y
+    MatInv <<- NULL
   }
   get <- function() x
   setinverse <- function(inverse) MatInv <<- inverse
