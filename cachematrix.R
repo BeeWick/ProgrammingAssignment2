@@ -1,5 +1,5 @@
-## functions do
 ## Cache Inverse of A Matrix
+
 ## Takes an invertable matrix as an argument
 
 
